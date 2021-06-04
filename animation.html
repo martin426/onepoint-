@@ -1,0 +1,189 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>animation page</title>
+  <style>
+  .anime{
+    height:700px;
+    border:1px solid black;
+    position: relative;
+    overflow: hidden;
+  }
+  .sky{
+    height:250px;
+    background-image:url("ecommerce/resource/images/38966158-grassland-wallpapers.jpg");
+    position:relative;
+  }
+  .cloud{
+    height:120px;
+    width:16%;
+    position: absolute;
+    animation-name:cloud;
+    animation-duration: 35s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+  }
+  .c-right{
+    animation-duration:45s;
+    animation-property: right;
+    animation-name: cloud2;
+    right:-20;
+    }
+    .dur-5{
+      left:-20%;
+      animation-name:cloud;
+      animation-property: left;
+      animation-duration:50s;
+    }
+    .bird{
+      left:-20%;
+      animation-name:cloud;
+      animation-property: left;
+      animation-duration:7s;
+      margin-top: 5%;
+    }
+    .bird-2{
+      left:-20%;
+      animation-name:cloud;
+      animation-property: left;
+      animation-duration:10s;
+      margin-top: 5%;
+    }
+    .bird-3{
+      left:-20%;
+      animation-name:cloud;
+      animation-property: left;
+      animation-duration:5s;
+      margin-top: 5%;
+    }
+    .bird-4{
+      left:-20%;
+      animation-name:cloud;
+      animation-property: left;
+      animation-duration:12s;
+      animation-delay: 5s;
+      margin-top:13%;
+    }
+    .airplane{
+      left:-20%;
+      animation-name:cloud;
+      animation-property: left;
+      animation-duration:12s;
+      animation-delay: 1s;
+      margin-top:1%;
+    }
+
+  .field{
+    height:250px;
+    background-image: url("ecommerce/resource/images/38966158-grassland-wallpapers.jpg");
+    background-position: center;
+  }
+  .road{
+    background-color:rgba(0,0,0,.7);
+    height: 240px;
+    position: relative;
+  }
+  .byk{
+    left:-20%;
+    animation-name:cloud;
+    position: absolute;
+    animation-property: left;
+    animation-duration:5s;
+    animation-delay: 1s;
+    margin-top:5%;
+  }
+  .car{
+    left:-20%;
+    animation-name:cloud;
+    position: absolute;
+    animation-property: left;
+    animation-duration:20s;
+    animation-delay: 5s;
+    margin-top:5%;
+  }
+  .car1{
+    left:-20%;
+    animation-name:cloud;
+    position: absolute;
+    animation-property: left;
+    animation-duration:15s;
+    animation-delay: 2s;
+    margin-top:9%;
+  }
+  .stroke{
+    border:1px solid gray ;
+    border-bottom: 4px dashed white;
+    height:45%;
+    width:2500%;
+
+    /* position: absolute;
+    border-left:0;
+    border-right:0;
+    border-top:0;
+    margin-top: 4%;
+    animation-name: cloud3;
+    animation-duration: 30s;
+    animation-iteration-count: infinite;
+    animation-property:right; */
+  }
+  @keyframes cloud{
+      from{left:-20%;}
+      to{left:100%;}
+    }
+  @keyframes cloud2{
+        from{right:-20%;}
+        to{right:100%;}
+    }
+    @keyframes cloud3{
+          from{right:-20%;}
+          to{right:100%;}
+      }
+
+  </style>
+</head>
+<body>
+  <div class="anime">
+    <div class="sky">
+       <div class="cloud">
+        <img src="ecommerce/resource/images/580b585b2edbce24c47b263e.png"height="100%" width="100%">
+       </div>
+       <div class="cloud c-right">
+        <img src="ecommerce/resource/images/580b585b2edbce24c47b263e.png"height="100%" width="100%">
+       </div>
+       <div class="cloud dur-5">
+        <img src="ecommerce/resource/images/580b585b2edbce24c47b263e.png"height="100%" width="100%">
+       </div>
+       <div class="cloud dur-5 bird">
+        <img src="ecommerce/resource/images/bird.gif"height="40%" width="30%">
+       </div>
+       <div class="cloud dur-5 bird-2">
+        <img src="ecommerce/resource/images/bird.gif"height="40%" width="30%">
+       </div>
+       <div class="cloud dur-5 bird-3">
+        <img src="ecommerce/resource/images/bird.gif"height="40%" width="30%">
+       </div>
+       <div class="cloud dur-5 bird-4">
+        <img src="ecommerce/resource/images/bird.gif"height="50%" width="40%">
+       </div>
+     </div>
+      <div class="field">
+        <div class="cloud dur-5 bird-4 airplane">
+         <img src="ecommerce/resource/images/animated-helicopter-image-0037.gif"height="100%" width="100%">
+        </div>
+      </div>
+        <div class="road">
+          <div class="cloud dur-5 bird-4 byk">
+           <img src="ecommerce/resource/images/Sports bike.png"height="100%" width="50%">
+          </div>
+          <div class="cloud dur-5 bird-4 car">
+           <img src="ecommerce/resource/images/moving car.gif"height="100%" width="50%">
+          </div>
+          <div class="cloud dur-5 bird-4 car1">
+           <img src="ecommerce/resource/images/silhouette-3597579_960_720.png"height="50%" width="50%">
+          </div>
+          <div class="stroke"></div>
+
+        </div>
+  </div>
+</body>
+</html>

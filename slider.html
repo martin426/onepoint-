@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Onepoint Business platform</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;0,600;1,100;1,700&display=swap" rel="stylesheet">
+  <!-- Fontawesome for Icons -->
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+
+  <style>
+  .parent{
+    height:500px;
+    position:relative;
+  }
+  img{
+    object-fit:cover;
+    position:center;
+  }
+  .arrow{
+    width:50px;
+    height:50px;
+    border:1px solid black;
+    position:absolute;
+    top:0;
+
+  }
+  .left{
+    transform: rotate(45deg);
+    border-left:0;
+    border-bottom: 0;
+    left:50px;
+  }
+ .right{
+   transform: rotate(45deg);
+   border-top:0;
+   border-right: 0;
+   left:50px;
+ }
+ .box{
+   height:100px;
+   width:200px;
+   border:2px solid black;
+   border-radius:50%;
+   background-color: red;
+   animation-name: mymove;
+   animation-duration:5s;
+   position: relative;
+   /* animation-iteration-count: 3; */
+   /* animation-direction: alternate-reverse; */
+   animation-fill-mode: forwards;
+ }
+ @keyframes mymove {
+   0%{
+     left: 0;
+     top:0;
+   }
+   25%{
+     left:300px;
+     top:0;
+   }
+   50%{
+     left:300px;
+     top:300px;
+   }
+   75%{
+     left:0;
+     top:300px;
+   }
+   100%{
+     left:200px;
+     top:200px;
+   }
+ }
+  </style>
+</head>
+<body>
+  <div class="parent">
+    <img src="ecommerce/resource/images/ecom_img1.jpg" alt="ecom_img1.jpg" width="100%" height="100%">
+    <div class="Arrow right"></div>
+    <div class="Arrow left"></div>
+  </div>
+<div class="box"></div>
+</body>
+</html>

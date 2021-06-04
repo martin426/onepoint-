@@ -1,0 +1,414 @@
+html{
+
+}
+body{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', 'cursive' ,sans-serif;
+  color:#a39595;
+  background-color: #cadeda;
+}
+*{
+  box-sizing: border-box;
+  margin:0;
+  padding:0;
+  text-decoration: none;
+}
+header{
+  height: 500px;
+  background-image: url('../images/shopping 2.png');
+  background-position:center;
+  position:relative;
+  background-size: cover;
+}
+.navbar{
+  list-style-type: none;
+  overflow: hidden;
+  background-color:rgba(0,0,0,0);
+  height: 100px;
+  padding:60px 10%;
+}
+#shopping-cart{
+  position: absolute;
+  margin:0 20%;
+  color:black;
+  font-size:190%;
+  font-weight: bold;
+  }
+.header-section{
+  height: 350px;
+  background-image: url('../images/shopping 2.png');
+  background-position:center;
+  position:relative;
+  background-size: cover;
+ }
+.nav-title{
+  position: relative;
+  text-align: center;
+  line-height:50px;
+  font-weight: bold;
+  font-size: 20px;
+  color:rgba(0,0,0,.5);
+  margin:50px auto;
+  word-spacing:20px;
+  letter-spacing: 6px;
+}
+.title2{
+  color: rgba(0,0,0,.7);
+  font-weight: bold;
+}
+.cant-us{
+  text-align: center;
+  margin:3% 0;
+}
+.phone-icon{
+  position: absolute;
+  margin:4% 36%;
+  color:black;
+  font-size: 180%;
+  font-weight: bold;
+}
+.write-up1{
+  margin:3% 10%;
+  text-align: center;
+}
+.write-up{
+margin:3% 10%;
+color:rgba(0,0,0,.7)
+}
+.brand{
+  font-size:35px;
+  text-decoration: none;
+  font-weight: 600;
+  color:#a39595;
+}
+.brand:hover{
+color:#a9dbeb;
+}
+.navbar-link{
+  float:right;
+  margin-left: 50px;
+  color:#b6e4f2;
+}
+.navbar-item{
+  text-decoration: none;
+  padding:13px 17px;
+  color:rgba(0,0,0,.7);
+  font-weight: bold;
+}
+.navbar-item.active{
+  border:1px solid skyblue;
+  border-radius: 5px;
+}
+.navbar-item:hover{
+  color:#7e959c;
+}
+.slider{
+  width:80%;
+  margin:50px auto;
+  color:#87c1ed;
+  padding:30px 10px;
+  /* background-color: rgba(0,0,0,.1); */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.slider .title{
+  font-size: 4rem;
+  letter-spacing: 8px;
+}
+.slider .text{
+  line-height: 40px;
+  margin:30px 0;
+  letter-spacing: 4px;
+  color:black;
+  font-weight: 600;
+}
+/* global style */
+/* animation code starts here added animation.... */
+@keyframes example {
+    from {background-color: red;}
+    to {background-color: skyblue;}
+}
+.btn {
+    background-color: red;
+    animation-name: example;
+    animation-duration: 10s;
+}
+/* animation code ended here..... */
+.btn{
+  padding: 15px 25px;
+  background:tomato;
+  font-size: 20px;
+  color:white;
+  border:1px solid tomato;
+  outline:0;
+  border-radius: 7px;
+}
+.btn:hover{
+  color:#60f0c7;
+  background:transparent;
+  border:1px solid;
+}
+.headings{
+ text-align: center;
+ padding:50px 0;
+}
+.headings h1{
+ font-size: 30px;
+ text-transform: uppercase;
+}
+/* global style ends here */
+/* Product Listing Section */
+.product{
+  height: 800px;
+  padding:15px 10%;
+}
+
+.product-list{
+  height: 600px;
+  text-align: center;
+}
+.product-list .item{
+  border:2px solid gray;
+  height:300px;
+  width: 20%;
+  border-radius: 10px;
+  display: inline-block;
+  margin-right:50px;
+  margin-bottom:30px;
+}
+.product-list .item:hover{
+  border-radius: 0px;
+}
+.product-list .item-img{
+  height: 40%;
+  padding:25px;
+}
+.product-list .item-img img{
+  object-fit: contain;
+}
+.product-list .item-body{
+  height: 60%;
+  padding:20px 30px;
+}
+.item-body h3{
+  font-size: 13px;
+  padding:5px;
+  color:gray;
+  text-align: right;
+}
+.item-body p{
+  font-size:13px;
+  margin:10px 0;
+  text-align: left;
+}
+.item-body button{
+  border:1px solid #60f0c7;
+  padding:7px 15px;
+  text-align: left;
+  background: tomato;
+  color:white;
+  margin-left: -22px;
+}
+.item-body button:hover{
+  color:#60f0c7;
+  background:transparent;
+}
+/* Aside Section */
+.aside{
+  padding:40px 5%;
+  background-color:#302f2f;
+  height: 1150px;
+}
+.aside-item{
+  width:50%;
+  height:500px;
+  float:left;
+  padding:50px;
+}
+.aside-item h1{
+  margin: 50px;
+  font-weight: 600;
+  font-size:50px;
+}
+.aside-item p{
+  line-height: 30px;
+}
+.card{
+  padding:0px 10%;
+  text-align: center;
+  height: 550px;
+}
+.card-item{
+  width:30%;
+  height: 350px;
+  float:left;
+  margin-left:30px;
+  padding:40px;
+  color:white;
+  box-shadow: 0 10px 7px gray;
+  border-radius: 0px 25px;
+}
+.card-item i{
+  margin-bottom:20px;
+  font-size:60px;
+  color: tomato;
+}
+.card-item h1{
+  margin-bottom:20px;
+}
+.card-item p{
+  text-align: left;
+  line-height: 20px;
+  font-weight: 300px;
+}
+
+.form-feed{
+  background-color:white;
+}
+/* these form section */
+input,textarea{
+  width:50%;
+  padding:10px 15px;
+  font-size: 10px;
+  border:2px solid black;
+  border-radius: 15px;
+}
+.form{
+  padding:30px 0;
+}
+.header-text{
+  padding:20px 0;
+}
+.form-action{
+  padding:10px;
+  margin:auto;
+}
+.form-field{
+text-align: center;
+padding:30px 0;
+background-color:#cadeda;
+background-color: transparent;
+}
+.form-action button{
+  padding:15px;
+  font-size:10px;
+  width:50%;
+  border:2px solid green;
+  border-radius:15px;
+}
+.form-action button:hover{
+  background-color:tomato;
+  color:white;
+}
+/* form section stops here.... */
+.head{
+  margin:5% 0;
+  text-align: center;
+}
+.rating{
+  position: relative;
+  border:1px solid black;
+  height:650px;
+  width:100%;
+  background-color:rgba(0,0,0,.7);
+}
+
+.imgA{
+  border:1px solid black;
+  border-radius:35%;
+  height:120px;
+  width:25%;
+  margin:10% 40%;
+}
+
+.bio-img{
+  position: absolute;
+  background-color:rgba(0,0,0,.7);
+  border:1px solid black;
+  height:400px;
+  width:25%;
+  margin:0 40%;
+  border-radius:0 20%;
+  box-shadow: 10px 10px rgba(255,255,255,.6);
+}
+.p-text{
+  font-size: 13px;
+  line height:3%;
+  margin:5% 13%;
+}
+.arrow{
+position: absolute;
+color:rgba(255,255,255,.6);
+}
+#right{
+  position: absolute;
+  margin:200px 1299px;
+}
+#left{
+  position: absolute;
+  margin:200px 20px;
+}
+.star{
+  position: absolute;
+  margin:2% 23%;
+}
+/* register section.. */
+.form-register{
+  background-image: url('../images/shopping 2.png');
+  border:1px solid black;
+  height:200px;
+}
+.register-heading{
+  line-height:100%;
+  text-align:center;
+  padding-top:50px;
+
+}
+.register-content{
+  background-color:#302f2f;
+  height:400px;
+  text-align: center;
+  padding:50px;
+  font-size: 40px;
+}
+/* this is animation section..... */
+.animation-slider{
+  height:500px;
+  background-color:#302f2f;
+}
+.animation-screen{
+  height:100%;
+  width:500%;
+}
+.animation-anime{
+  width:20%;
+  height:100%;
+  position:relative;
+  float:left;
+  animation-name:anime;
+  animation-duration:15s;
+  animation-delay:2s;
+  animation-play-state: running;
+  animation-iteration-count: infinite;
+  animation-fill-mode:forwards;
+
+}
+@keyframes anime{
+  0%{left:0}
+  25%{left:-20%}
+  50%{left:-40%}
+  75%{left:-60%}
+  100%{left:-80%}
+}
+img{
+  object-fit:cover;
+  object-position:center;
+  position:relative;
+
+}
+/* media query starts here..... */
+@media only screen and (max-width: 600px) {
+    body {
+        background-color: lightblue;
